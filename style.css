@@ -7,6 +7,7 @@
 
 body {
   background: #FDF5E6;
+  width: auto;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   line-height: 2rem;
