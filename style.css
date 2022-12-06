@@ -49,6 +49,15 @@ section ul {
   list-style: none;
 }
 
+section a {
+  text-decoration: none;
+  color: black;
+}
+
+section a:hover {
+  color: white;
+}
+
 nav a {
   text-decoration: none;
   color: #000;
