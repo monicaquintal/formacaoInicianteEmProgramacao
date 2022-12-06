@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+  <header>  
+    <h1>Git</h1>
+    <p>Sistema de controle de versões.</p>
+  </header>
+  
+  <div id="main">
+    <section>
+      <h2>O que é?</h2>
+      <p>
+        O Git é o sistema de controle de versões mais utilizado atualmente por conta de algumas características vantajosas, como permitir uma cópia do projeto, um repositório do projeto em sua máquina, para que se possa trabalhar em cima dela e então enviá-lo para outro repositório, o que se denomina repositórios distribuídos.
+        
+        Isso permite o trabalho de modo offline, antes da comunicação com outro servidor para que o envio de versões, e assim por diante. Existem várias outras diferenças entre estas alternativas, e você as entenderá melhor no decorrer do curso.
+      </p>
+    </section>
+
+    <section>
+      <h2>Funções</h2>
+      <ul>
+        <li><p>Cada alteração que você faz fica gravada em um histórico, podendo ser visualizada e restaurada a qualquer instante.</p></li>
+        <li><p>Permite que a gente armazene as modificações feitas em cada arquivo em um servidor próprio para isso. Toda a gestão de alterações é feita pelo Git e nós só precisamos nos preocupar em criar código que funciona, e não em quem alterou o que antes.</p></li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Para nos identificarmos</h2>
+      <cite>
+        git config --local user.name "Seu nome aqui" <br>
+        git config --local user.email "seu@email.aqui"
+      </cite>
+    </section>
+
+    <section>
+      <h2>Repositórios</h2>
+      <ul>
+        <li>
+          <h3>git init</h3>
+          <p>Inicializa um repositório do Git.</p>
+          <p>Todas as alterações que forem realizadas no arquivo localizado dentro deste repositório poderão ser mostradas pelo Git, com indicações do que foi modificado, quem modificou, quando, e por aí vai.</p>
+        </li>
+        <li>
+          <h3>git status</h3>
+          <p>Informa se está sendo rodado no ramo, ou branch master (On branch master), e se commits (No commits yet).</p>
+          <p>Também indica quando há arquivos não monitorados (Untracked files) em nosso projeto.</p>
+        </li>
+        <li>
+          <h3>git add</h3>
+          <p>Inclui-lo no que se quer "commitar".</p>
+        </li>
+        <li>
+          <h3></h3>
+          <p>Atualmente não utilizamos mais o termo master como repositorio principal, e sim main, sendo esse é o novo padrão do GitHub desde o fim de 2020. Essa nomenclatura é mais inclusiva e facilita o entendimento entre pessoas desenvolvedoras.</p>
+          <p></p>
+        </li>
+
+        <li>
+          <h3></h3>
+          <p></p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="voltar"><a href="../index.html">Voltar ao menu inicial</a></section>
+  </div>
+  
+  <footer>
+    <a href="https://github.com/monicaquintal" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40px"></a>
+    <a href="https://github.com/monicaquintal" target="_blank"><p>Mônica Zungalo Quintal - 2022.</p></a>
+  </footer>
+  
+</body>
+</html>

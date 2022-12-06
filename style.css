@@ -42,6 +42,11 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+section h3 {
+  margin: 1rem;
+  color: white;
+}
+
 section p {
   text-align: justify;
 }
@@ -57,6 +62,13 @@ section a {
 
 section a:hover {
   color: white;
+}
+
+section#voltar {
+  margin-top: -2rem;
+  margin-bottom: -1rem;
+  text-decoration: none;
+  text-align: right;
 }
 
 nav a {
