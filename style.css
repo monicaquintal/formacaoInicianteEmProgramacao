@@ -55,6 +55,10 @@ section ul {
   list-style: none;
 }
 
+section ol {
+  margin-left: 1rem;
+}
+
 section a {
   text-decoration: none;
   color: black;
@@ -69,6 +73,21 @@ section#voltar {
   margin-bottom: -1rem;
   text-decoration: none;
   text-align: right;
+}
+
+section figure {
+  text-align: center;
+}
+
+section figure img {
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+section figure figcaption {
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 nav a {
