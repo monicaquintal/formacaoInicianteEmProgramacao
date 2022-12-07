@@ -16,5 +16,6 @@ Esta formação faz parte do programa **ONE**, parceria de *Alura + Oracle*.
 
 ## Cursos: 
 
-### 1. Javascript e HTML: desenvolva um jogo e pratique lógica de programação Javascript e HTML: desenvolva um jogo e pratique lógica de programação
+1. Javascript e HTML: desenvolva um jogo e pratique lógica de programação Javascript e HTML: desenvolva um jogo e pratique lógica de programação
 
+2. Git e Github: controle e compartilhe seu código

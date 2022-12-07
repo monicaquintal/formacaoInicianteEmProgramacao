@@ -34,11 +34,12 @@
     <section>
       <h2>Para nos identificarmos</h2>
       <cite>
-        git config --local user.name "Seu nome aqui" <br>
-        git config --local user.email "seu@email.aqui"
+          git config --local user.name "Seu nome aqui" <br>
+          git config --local user.email "seu@email.aqui"
       </cite>
+      <p>Sendo "local" para cada projeto, e "local" para a máquina toda.</p>
     </section>
-
+    
     <section>
       <h2>Repositórios</h2>
       <ul>
@@ -46,28 +47,114 @@
           <h3>git init</h3>
           <p>Inicializa um repositório do Git.</p>
           <p>Todas as alterações que forem realizadas no arquivo localizado dentro deste repositório poderão ser mostradas pelo Git, com indicações do que foi modificado, quem modificou, quando, e por aí vai.</p>
-        </li>
+          </li>
+    
         <li>
           <h3>git status</h3>
           <p>Informa se está sendo rodado no ramo, ou branch master (On branch master), e se commits (No commits yet).</p>
           <p>Também indica quando há arquivos não monitorados (Untracked files) em nosso projeto.</p>
+          <p>Informações retornadas no status:</p>
+            <ul>
+              <li>HEAD: Estado atual do nosso código, ou seja, onde o Git os colocou.</li>
+              <li>Working tree: Local onde os arquivos realmente estão sendo armazenados e editados.</li>
+              <li>index: Local onde o Git armazena o que será commitado, ou seja, o local entre a working tree e o repositório Git em si.</li>
+            </ul>
         </li>
+    
         <li>
-          <h3>git add</h3>
-          <p>Inclui-lo no que se quer "commitar".</p>
+            <h3>git add nomeDoArquivo.extensão</h3>
+            <p>Inclui o arquivo ao que se quer "commitar".</p>
         </li>
+    
         <li>
-          <h3></h3>
-          <p>Atualmente não utilizamos mais o termo master como repositorio principal, e sim main, sendo esse é o novo padrão do GitHub desde o fim de 2020. Essa nomenclatura é mais inclusiva e facilita o entendimento entre pessoas desenvolvedoras.</p>
-          <p></p>
+            <h3>git add .</h3>
+            <p>Quando há vários arquivos, não precisamos colocar seus nomes um a um, bastando git add . para que todos os arquivos da pasta atual sejam monitorados.</p>
         </li>
-
+    
         <li>
-          <h3></h3>
-          <p></p>
+            <h3>git rm</h3>
+            <p>Quando utilizado, este comando remove o arquivo, para que o mesmo deixe de ser monitorado pelo Git.</p>
+        </li>
+    
+        <li>
+            <h3>git commit -m "informação commit"</h3>
+            <p>Utilizado quando queremos salvar as alterações.</p>
+            <p>O <strong>commit</strong>consiste em um check point para indicar que houve mudança, que precisa ter modificações.</p>
+            <p>o <strong>parâmetro -m</strong> serve para passarmos uma mensagem de commit, que será incluído entre aspas.</p>
+        </li>
+    
+        <li>
+            <h3>clear</h3>
+            <p>Limpa o terminal.</p>
+        </li>
+    
+        <li>
+            <h3>git log</h3>
+            <p>Utilizado para verificar o histórico de alterações, cada mensagem de commits feitos, o andamento do nosso projeto, entre outros.</p>
+            <p>A primeira informação retornada é primeiro deles o <strong>hash</strong> do commit, uma identificação única de cada commit (não existem dois commits com o mesmo hash).</p>
+            <p>A informação seguinte se refere ao branch, ou "ramo" em que o commit se encontra.</p>
+            <p>Além disso, temos a autoria do commit, e-mail configurado, data de commit e mensagem. </p>
+            <p>Outras opções de comandos:</p>
+            <p><strong>git log --oneline: </strong>permite visualizar todos os commits, sendo que cada uma ocupa uma única linha.</p>
+            <p><strong>git log -p: </strong>fornece mais informações, como as alterações do commit (quando finalizarmos a visualização do log, basta apertar a tecla q para voltar "ao normal" em nossa linha de comando).</p>
+            <p><strong>git log --help: exibe as opções possíveis.</strong></p>
+            <p><strong>git log --pretty="parametros de formatação": gera o histórico da nossa aplicação em formatos personalizados.</strong></p>
         </li>
       </ul>
     </section>
+    
+    <section>
+        <h2>Git ignore</h2>
+        <p>Utilizado quando não queremos que determinado arquivo seja monitorado, como no caso de um arquivo de configurações da IDE.</p>
+        <p>Trata-se de um <strong>arquivo especial do Git</strong>, chamado .gitignore, e todas as linhas que estiverem nele serão lidos e ignorados pelo Git.</p>
+        <p>Se temos um arquivo denominado ide-config que queremos que seja ignorado, por exemplo, basta o incluirmos em .gitignore, digitando ide-config simplesmente. Da mesma forma, se tivéssemos uma pasta ide, incluiríamos ide/, em uma nova linha.</p>
+        <p>Para adicionar o arquivo, utilizar "git add .gitignore", por exemplo, e 'git commit -m "Adicionando .gitignore"'.</p>
+    </section>
+    
+    <section>
+        <h2>Em que momento realizamos o commit?</h2>
+        <p>O consenso é que jamais devemos commitar código que não funciona. Isto é, o código deve estar sempre no estado funcional para ser commitado. Isto não significa que ele deva ser commitado apenas ao fim do projeto. A recomendação é que se gere um commit após cada alteração significativa.</p>
+        <p>Não existe uma regra, e sim recomendações. Sempre que uma pequena funcionalidade for implementada, ou um bug for corrigido, é possível realizar um commit, para que no fim do dia, um conjunto de commits gere o sistema como um todo, e não um único commit.</p>
+    </section>
+    
+    <section>
+        <h2>Repositórios remotos</h2>
+        <p>Trata-se de um servidor local para onde possamos enviar nossas alterações, que ficarão acessíveis para outras pessoas.</p>
+        <ul>
+    
+          <li>
+            <h3>git remote</h3>
+            <p>Todos os repositórios remotos que o repositório local conhece são listados.</p>
+            <p>git remote add <em>url ou local</em></p>
+            <p>git remote -v: faz com que o endereço de local seja exibido.</p>
+            <p>Além disso, é indicado que os dados deste caminho serão buscados (fetch), e enviados para este mesmo caminho (push).</p>
+          </li>
+    
+          <li>
+            <h3>git init --bare</h3>
+            <p>Parâmetro indica que este repositório é puro, que contém apenas as alterações dos arquivos, e não uma cópia física de cada um dos arquivos.</p>
+            <p>Com este comando nós criamos um repositório que não terá a working tree, ou seja, não conterá uma cópia dos nossos arquivos. Como o repositório servirá apenas como servidor, para que outros membros da equipe sincronizem seus trabalhos, poupamos espaço de armazenamento desta forma.</p>
+          </li>
+    
+          <li>
+            <h3>git clone</h3>
+            <p>Clona o repositório, , ou seja, traz todos os dados de um repositório remoto para o nosso repositório local pela primeira vez.</p>
+            <p>git clone <em>url ou local</em>.</p>
+          </li>
+    
+          <li>
+            <h3>git push local master</h3>
+            <p>Para empurrarmos as modificações, usaremos o comando <strong>git push</strong>, que não é o suficiente por si só, uma vez que não estamos sendo explícitos.</p>
+            <p>O "git push local master", e assim, serão enviados todos os dados por todos os códigos e alterações feitas até então para nosso repositório que chamamos de "local", dentro de "servidor". Após pressionarmos "Enter", teremos a mensagem de que uma nova branch (ramo) foi criada em "servidor", chamada master.</p>
+          </li>
+    
+          <li>
+            <h3>git pull</h3>
+            <p>Traz os dados do repositório remoto para o seu repositório.</p>
+            <p>Se digitar git remote, teremos "origin". Para renomear, "git remote rename origin local" - manteremos a paridade com a nomenclatura original. Em seguida, "git pull local master" para trazer os dados.</p>
+          </li>
+        </ul>
+    </section>    
 
     <section id="voltar"><a href="../index.html">Voltar ao menu inicial</a></section>
   </div>
