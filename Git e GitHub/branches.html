@@ -17,6 +17,7 @@
     <section>
       <h2>O que é uma branch?</h2>
       <p>Branches ("ramos") são utilizados para desenvolver funcionalidades isoladas umas das outras. A branch master é a branch "padrão" quando você cria um repositório.</p>
+      <p>Trata-se de uma linha de commits separada, e que pode ser utilizada para desenvolver funcionalidades independentes. E, com branches separados, podemos evitar que o código de uma funcionalidade interfira em outra.</p>
       <p>Consistem em ramificações de um trabalho, podendo existir duas (ou mais!) linhas de desenvolvimento distintas e independentes entre si.</p>
       <p>Permite separar os ramos de desenvolvimento, para sabermos exatamente no que cada um está mexendo, e para que não haja interferências no código compartilhado.</p>
       <p>Por padrão, se executarmos <strong><em>git branch</em></strong> no Git Bash, teremos um único branch (master). No entanto, poderemos criar outros. Por exemplo: no caso de trabalharmos somente no título, utilizaremos o comando "git branch titulo", que criará este branch, embora tenhamos que mudar para ela manualmente, com "git checkout titulo".</p>
@@ -26,6 +27,7 @@
     <section>
       <h2>Unindo o trabalho: Merge</h2>
       <p>O comando <strong><em> git merge nomeDaBranch</em></strong> fará com que o Git automaticamente crie um commit com o branch atual e todo o conteúdo de nossa branch paralela.</p>
+      <p>O git merge gera um novo commit, informando que houve uma mescla entre duas branches. </p>
       <p>Quando dermos um "Enter", será criado um commit de merge, ou seja, de junção de duas branches.</p>
       <p>Ou seja, utilizar: "git checkout master" e, na sequência, "git merge titulo". Desta forma, colocaremos o HEAD na branch master, ou seja, faremos com que o nosso código esteja no estado que o deixamos com o último commit na master. Depois, uniremos o trabalho da branch titulo com a branch atual (master).</p>
     </section>
@@ -34,6 +36,7 @@
       <h2>Atualizando a Branch</h2>
       <p>Em algumas situações, gerar um commit a mais (de merge), dependendo da estratégia utilizada para gerar os commits, pode acabar atrapalhando ou "poluindo" o log.</p>
       <p>O comando <strong><em>git rebase nomeDaBranch</em></strong> faz com que o Git pegue os commits na branch nova, atualizando a master, que possui todos os commits contidos na branch nova, além do commit que havia nela mesma. Deste modo, geramos uma única linha, sem confusões.</p>
+      <p>O git rebase não gera um commit de merge, simplificando o nosso log!</p>
       <p>Ou seja, o rebase atualiza a branch, mantendo o trabalho dela como sendo o último, para que não se gere este tipo de confusão. Com isso, temos as correções realizadas tanto no título quanto na lista.</p>
       <p>O merge junta os trabalhos e gera um merge commit. O rebase aplica os commits de outra branch na branch atual. Com isso, evitamos os commits de merge. Há uma longa discussão sobre o que é "melhor": rebase ou merge. Estude, pesquise, e tire suas próprias conclusões.</p>
     </section>
