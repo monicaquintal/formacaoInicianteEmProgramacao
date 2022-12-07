@@ -16,10 +16,17 @@
   <div id="main">
     <section>
       <h2>O que é uma branch?</h2>
+      <p>Branches ("ramos") são utilizados para desenvolver funcionalidades isoladas umas das outras. A branch master é a branch "padrão" quando você cria um repositório.</p>
       <p>Consistem em ramificações de um trabalho, podendo existir duas (ou mais!) linhas de desenvolvimento distintas e independentes entre si.</p>
       <p>Permite separar os ramos de desenvolvimento, para sabermos exatamente no que cada um está mexendo, e para que não haja interferências no código compartilhado.</p>
       <p>Por padrão, se executarmos <strong><em>git branch</em></strong> no Git Bash, teremos um único branch (master). No entanto, poderemos criar outros. Por exemplo: no caso de trabalharmos somente no título, utilizaremos o comando "git branch titulo", que criará este branch, embora tenhamos que mudar para ela manualmente, com "git checkout titulo".</p>
-      <p><strong><em>git checkout -b nomeDaBranch:</em></strong>cria um branch e já passa para ele.</p>
+      <p><strong><em>git checkout -b nomeDaBranch:</em></strong> cria um branch e já passa para ele.</p>
+    </section>
+
+    <section>
+      <h2>Unindo o trabalho: Merge</h2>
+      <p>O comando <strong><em> git merge nomeDaBranch</em></strong> fará com que o Git automaticamente crie um commit com o branch atual e todo o conteúdo de nossa branch paralela.</p>
+      <p>Quando dermos um "Enter", será criado um commit de merge, ou seja, de junção de duas branches.</p>
     </section>
 
     <section id="voltar"><a href="../index.html">Voltar ao menu inicial</a></section>

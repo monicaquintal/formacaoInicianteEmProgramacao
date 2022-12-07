@@ -22,6 +22,15 @@ header {
   border-radius: 20px;
 }
 
+header#principal {
+  display: flex;
+}
+
+header img {
+  width: 12%;
+  border-radius: 50%;
+}
+
 header h1 {
   padding-bottom: 1rem;
 }
@@ -113,5 +122,3 @@ footer a {
   text-decoration: none;
   color: #000;
 }
-
-
