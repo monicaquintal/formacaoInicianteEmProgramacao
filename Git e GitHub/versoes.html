@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulando as versões</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+  <header>  
+    <h1>Manipulando as versões</h1>
+    <p></p>
+  </header>
+  
+  <div id="main">
+    <section>
+      <h2>Ctrl + Z no Git</h2>
+      <p>É muito comum começarmos a desenvolver e fazer testes e termos que <em>desfazer</em> estas alterações. De que forma será que conseguimos desfazê-las com o Git? Será que ele possui alguma espécie de atalho "Ctrl + Z"?</p>
+      <p>Por se tratar de um único arquivo, a alteração em uma linha poderia ser desfeita com "Ctrl + Z", mas imaginemos um projeto grande, em que fazemos várias alterações, e só então entendemos que não está como queremos.</p>
+
+      <h3>git checkout -- nomeDoArquivo</h3>
+      <p>No Git Bash, usaremos git status, o que nos traz algumas informações. É identificado que houve modificações no arquivo, que ainda não foram commitadas. Para isso, precisaríamos chamar o git add, no entanto, é indicado que, se quiséssemos descartar as alterações, poderemos chamar <strong><em>git checkout --</em></strong>, seguido do que queremos desfazer.</p>
+      <p>O git checkout, portanto, serve para navegarmos em estados do repositório, seja por meio de branches ou desfazendo modificações no arquivo.</p>
+
+      <h3>git reset HEAD nomeDoArquivo</h3>
+      <p>Usado quando queremos desfazer uma alteração que já foi marcada para ser commitada.</p>
+      <p>Utilizar "git reset HEAD" seguido do nome do arquivo a ser desmarcado como algo que precisa passar pelo commit.</p>
+      <p>Sendo assim, basta utilizarmos git checkout -- index.html, o que fará com que não tenhamos mais nada a ser commitado, uma vez que a alteração foi desfeita com sucesso.</p>
+
+      <h3>git revert hashDoCommit</h3>
+      <p>Utilizado para desfazer um commit já realizado!</p>
+      <p>O hash do commit é obtido através de "git log" executado previamente.</p>
+      <p>Sua utilização fará com que o commit informado seja desfeito, criando outro. Ao ser rodado, portanto, ele irá gerar um commit cuja mensagem pode ser alterada, usaremos ":x" para salvarmos e sairmos da tela. </p>
+    </section>
+
+    <section id="voltar"><a href="../index.html">Voltar ao menu inicial</a></section>
+  </div>
+
+  <footer>
+    <a href="https://github.com/monicaquintal" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40px"></a>
+    <a href="https://github.com/monicaquintal" target="_blank"><p>Mônica Zungalo Quintal - 2022.</p></a>
+  </footer> 
+</body>
+</html>
