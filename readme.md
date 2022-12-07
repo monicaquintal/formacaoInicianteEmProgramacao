@@ -18,6 +18,14 @@ Esta formação faz parte do programa **ONE**, parceria de *Alura + Oracle*.
 
 1. Javascript e HTML: desenvolva um jogo e pratique lógica de programação Javascript e HTML: desenvolva um jogo e pratique lógica de programação
 
-2. Git e Github: controle e compartilhe seu código
+2. 
 
 3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. Git e Github: controle e compartilhe seu código
