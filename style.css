@@ -24,6 +24,7 @@ header {
 
 header#principal {
   display: flex;
+  gap: 1rem;
 }
 
 header img {

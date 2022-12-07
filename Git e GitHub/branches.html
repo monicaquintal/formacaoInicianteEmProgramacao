@@ -35,6 +35,7 @@
       <p>Em algumas situações, gerar um commit a mais (de merge), dependendo da estratégia utilizada para gerar os commits, pode acabar atrapalhando ou "poluindo" o log.</p>
       <p>O comando <strong><em>git rebase nomeDaBranch</em></strong> faz com que o Git pegue os commits na branch nova, atualizando a master, que possui todos os commits contidos na branch nova, além do commit que havia nela mesma. Deste modo, geramos uma única linha, sem confusões.</p>
       <p>Ou seja, o rebase atualiza a branch, mantendo o trabalho dela como sendo o último, para que não se gere este tipo de confusão. Com isso, temos as correções realizadas tanto no título quanto na lista.</p>
+      <p>O merge junta os trabalhos e gera um merge commit. O rebase aplica os commits de outra branch na branch atual. Com isso, evitamos os commits de merge. Há uma longa discussão sobre o que é "melhor": rebase ou merge. Estude, pesquise, e tire suas próprias conclusões.</p>
     </section>
 
     <section id="voltar"><a href="../index.html">Voltar ao menu inicial</a></section>
