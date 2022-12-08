@@ -107,10 +107,13 @@ nav a {
   color: #000;
 }
 
-
 nav a:hover {
   text-decoration: none;
   color: #fff;
+}
+
+section nav ul li {
+  margin-left: 1rem;
 }
 
 footer {
