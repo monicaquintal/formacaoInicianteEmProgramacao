@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerando entregas</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+  <header>  
+    <h1>Gerando entregas</h1>
+  </header>
+  
+  <div id="main">
+    <section>
+      <h2>Vendo as alterações</h2>
+      <p>O comando <strong><em>git log -p</em></strong> permite ver o que foi alterado em código commit a commit.</p>
+      <p>O comando <strong><em>git diff</em></strong>, por sua vez, permite verificar o que houve em cada commit, para garantir que nenhum bug foi adicionado, e entender o que de fato cada commit gerou.</p>
+      <p>Portanto, para entendermos as diferenças entre dois commits, precisaremos informar quais são aqueles que queremos verificar.</p>
+      <p>Utilizar <strong><em>git diff commit1..commit2</em></strong>!</p>
+      <p>Caso não tenha commitado ainda, o git diff mostrará o que há de diferente e não foi salvo.</p>
+      <p>Quando utilizamos o git diff, o sinal de subtração (-) antes da linha indica que ela não está mais presente no arquivo. Já o sinal de adição (+) mostra que é uma linha nova. Alterações são representadas por uma remoção e uma adição de linha.</p>
+      <p>No GitHub, haverá a informação de commits, branchs e <strong>release</strong>, que é a versão pronta para ser lançada ou baixada por qualquer pessoa que queira utilizar em seu sistema. </p>
+    </section>
+
+    <section>
+        <h2>Tags e releases</h2>
+        <p>No Git, há o conceito de <strong><em>tag</em></strong>, a qual marca um ponto na aplicação que não pode ser modificado, fixo. Assim, após ser lançada, a versão 0.1 nunca deixará de ser a versão 0.1, e quaisquer alterações que forem feitas nela, serão incluídas na versão posterior.</p>
+        <p>Isso não quer dizer que faremos um código que não será mais editável, apenas que criaremos um marco para onde poderemos ir, e que terá um código correspondente àquele estado.</p>
+        <p>Para criarmos uma tag, utilizaremos <strong>git tag -a, seguido do nome que damos a ela</strong>, como "v0.1.0".</p>
+        <p>Também poderemos incluir uma mensagem, com -m e "conteúdo da mensagem".</p>
+        <p>Se executarmos git tag, são exibidos todos estes marcos disponíveis.</p>
+    </section>
+
+    <section id="voltar"><a href="../index.html">Voltar ao menu inicial</a></section>
+    
+  </div>
+
+  <footer>
+    <a href="https://github.com/monicaquintal" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40px"></a>
+    <a href="https://github.com/monicaquintal" target="_blank"><p>Mônica Zungalo Quintal - 2022.</p></a>
+  </footer> 
+</body>
+</html> 

@@ -24,11 +24,13 @@ header {
 
 header#principal {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
 }
 
 header img {
-  width: 12%;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 

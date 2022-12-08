@@ -34,7 +34,30 @@
       <p>Sua utilização fará com que o commit informado seja desfeito, criando outro. Ao ser rodado, portanto, ele irá gerar um commit cuja mensagem pode ser alterada, usaremos ":x" para salvarmos e sairmos da tela. </p>
     </section>
 
+    <section>
+       <h2>Salvando alterações para commitar depois!</h2>
+       <p>E se quisermos guardar uma parte de uma alteração para depois, como faremos? Alguma modificação no código, para voltarmos a trabalhar nela depois, sem que precisemos commitá-la ou desfazê-la?</p>
+       <p>Há o <strong><em>conceito de Stash</em></strong> (git stash), no qual conseguimos salvar todas as alterações em um local temporário, sem necessidade de se gerar um commit para isto.</p>
+       <p>Se, após git stash executarmos git stash list, teremos uma lista de tudo que estiver salvo nestas condições.</p>
+       <p>Para trazer os dados armazenados pelo git stash ao diretório de trabalho. Há duas opções:</p>
+       <ol>
+        <li>Executar "git stash list", e em seguida passar o número da stash em "git stash apply 0", faz com que as modificações sejam aplicadas, porém continuarão na stash. Para a remoção, usar "git stash drop".</li>
+        <li>Caso queira fazer ambas as ações ao mesmo tempo (pegar a última alteração adicionada à stash, e já removê-la de lá), utilizar "git stash pop", que realiza o merge com as modificações que já existem e aplica aquelas que já estavam salvas.</li>
+       </ol>
+    </section>
+
+    <section>
+        <h2>Viajando no tempo...</h2>
+        <p>Ao utilizar o comando "git log --oneline", temos os hashs com os sete primeiros caracteres, o suficiente para identificá-los de forma única.</p>
+        <p>É possível utilizar <strong><em>git checkout códigoHash</em></strong> , e a mensagem exibida indicará que estamos em um estado de cabeça (HEAD) desanexado (detached) do controle de versões.</p>
+        <p>Isto é, não estamos mais em nenhum branch, e sim em um commit específico! E, se voltarmos à master, tudo que commitarmos aqui será ignorado.</p>
+        <p>Se quisermos manter os commits feitos a partir deste ponto, será necessário criar uma nova branch.</p>
+        <p>Portando, poderemos utilizar <strong><em>git checkout -b novo-branch</em></strong>, por exemplo, de forma a não estarmos mais desassociados da linha de desenvolvimento.</p>
+        <p>A descrição do comando git checkout --help, em uma tradução livre é: "Atualizar os arquivos na working tree para ficarem na versão especificada. [...]". Basicamente, podemos deixar o nosso código no estado do último commit de uma branch, de um commit específico, ou mesmo tags (que veremos adiante).</p>
+    </section>
+
     <section id="voltar"><a href="../index.html">Voltar ao menu inicial</a></section>
+    
   </div>
 
   <footer>
