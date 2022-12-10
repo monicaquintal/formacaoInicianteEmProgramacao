@@ -22,7 +22,7 @@ Esta formação faz parte do programa **ONE**, parceria de *Alura + Oracle*.
 
 3. HTML5 e CSS3 parte 1: crie uma página da Web
 
-4. 
+4. HTML5 e CSS3 parte 2: posicionamento, listas e navegação 
 
 5. 
 
