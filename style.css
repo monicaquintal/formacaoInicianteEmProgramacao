@@ -14,7 +14,7 @@ body {
   color: #000;
 }
 
-header {
+#principal {
   margin: 3rem;
   padding: 1rem;
   background: #CD5C5C;
@@ -24,6 +24,14 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.topo {
+  margin: 3rem;
+  padding: 1rem;
+  background: #CD5C5C;
+  text-align: center;
+  border-radius: 20px;
 }
 
 header img {

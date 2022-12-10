@@ -26,6 +26,6 @@ Esta formação faz parte do programa **ONE**, parceria de *Alura + Oracle*.
 
 5. HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas
 
-6. 
+6. HTML5 e CSS3 parte 4: avançando no CSS 
 
 7. Git e Github: controle e compartilhe seu código
