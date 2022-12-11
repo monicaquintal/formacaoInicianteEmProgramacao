@@ -14,7 +14,7 @@ body {
   color: #000;
 }
 
-#principal {
+.principal {
   margin: 3rem;
   padding: 1rem;
   background: #CD5C5C;
@@ -137,22 +137,20 @@ footer a {
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-  header {
+  
+  .principal {
     margin: 3rem;
     padding: 1rem;
     background: #CD5C5C;
     text-align: center;
     border-radius: 20px;
-    width: 100%;
-  
-    display: flex;
-    gap: 1rem;
   }
 
-  header img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    align-self: flex-start;
+  .texto {
+    margin-left: -10rem;
+  }
+
+  .principal img {
+    visibility: hidden;
   }
 }
