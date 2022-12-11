@@ -253,6 +253,34 @@ td, th {
   padding: 8px 15px;
 }
 
+@media screen and (max-width: 480px) {
+  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .lista-beneficios, .imagem-beneficios {
+    width: 100%;
+  }
+
+  .produtos {
+    width: 100%;
+  }
+
+  .produtos li {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
 /* SELETORES AVANÇADOS CSS 
 
 Seletor ">": para acessar os filhos de determinado elemento. 
