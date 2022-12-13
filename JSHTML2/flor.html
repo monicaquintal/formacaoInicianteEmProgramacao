@@ -2,29 +2,28 @@
 
 <script>
 
-    function desenhaQuadrado(x, y, cor) {
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
 
-        var tela = document.querySelector('canvas');
-        var pincel = tela.getContext('2d');
+    function desenhaCirculo(x, y, raio, cor) {
 
         pincel.fillStyle = cor;
-        pincel.fillRect(x, y, 50, 50);
-        pincel.strokeStyle = 'black';
-        pincel.strokeRect(x, y, 50, 50);
-
-}
-    /*
-    var x = 0;
-
-    while(x < 600) {
-
-        desenhaQuadrado(x, 0, 'green');
-    x = x + 50;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
     }
-   */
-  
-    for(var x = 0; x < 600; x = x + 50) {
-    desenhaQuadrado(x, 0, 'green');
+
+    function desenhaFlor(x, y) {
+
+        desenhaCirculo(x, y+20, 10, 'blue');
+        desenhaCirculo(x, y, 10, 'red');
+        desenhaCirculo(x, y-20, 10, 'yellow');
+        desenhaCirculo(x-20, y, 10, 'orange');
+        desenhaCirculo(x+20, y, 10, 'black');
     }
+
+    desenhaFlor(300, 200);
 
 </script>
